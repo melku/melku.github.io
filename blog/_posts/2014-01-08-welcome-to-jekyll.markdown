@@ -5,20 +5,10 @@ date:   2014-01-08 22:21:50
 categories: jekyll update
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Testing Jekyll on Github Pages.
 
-Jekyll also offers powerful support for code snippets:
+The setup has been rather easy because I'm on Windows. It looks like it would have been *really* easy if I used a Mac or Linux. The more I try webdev things on Windows, the more I feel like a Mac is the best fit. It would have been easier also if I weren't sticking to Python3. I met the following difficulties:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+- easy_install would not install Pygments on my computer. Using setup.py worked like a charm.
+- ruby_devkit is a little trickier to install on windows
+- Jekyll doesn't support Python3. `set PATH=C:/Python27;%PATH%` did the trick.
