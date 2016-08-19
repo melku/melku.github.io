@@ -1,2 +1,2 @@
 name: melku.github.io
-pygments: true
+highlighter: rouge
